@@ -2,18 +2,27 @@
   "name": "react-native-acknowledgements",
   "version": "0.1.0",
   "description": "Fufills open source license obligations for react native projects.",
+  "bin": "bin/generate-acknowledgements",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "ci": "npm run lint",
-    "lint": "eslint ./",
+    "lint": "eslint ./"
   },
   "files": [
     "build",
     "src"
   ],
+  "dependencies": {
+    "tldrlegal": "^1.0.6",
+    "commander": "^2.9.0",
+    "legally": "^2.8.1",
+    "shelljs": "^0.7.0",
+    "plist": "^2.1.0",
+    "xcode": "^1.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "babel-plugin-module-resolver": "^2.3.0",
@@ -22,10 +31,8 @@
     "eslint": "^3.3.1",
     "eslint-config-airbnb": "^10.0.1",
     "eslint-plugin-import": "^1.14.0",
-    "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-prefer-object-spread": "^1.1.0",
     "eslint-plugin-react": "^6.1.2",
-    "gitbook-cli": "^2.3.0",
     "lodash": "^4.17.2",
     "prop-types": "^15.5.10",
     "react": "16.0.0",
